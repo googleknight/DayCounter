@@ -35,7 +35,7 @@
     e.preventDefault();
     document.getElementById("mode").style.display='block';
     document.getElementById("mode").addEventListener("click", switchmode);
-    var pageTracker = _gat._getTracker("UA-88251366-2");
+    var pageTracker = _gat._getTracker("UA-88251366-3");
     pageTracker._trackPageview();
     this.analyticsflag = "on";
     localStorage.analyticsflag = "on";
