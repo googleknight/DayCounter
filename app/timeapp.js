@@ -56,7 +56,7 @@
     var endDate = moment("2019-10-11T00:00:01");
 
     var weeks = endDate.diff(startDate, 'weeks');
-    var days = endDate.diff(startDate, 'days');
+    var days = endDate.diff(startDate, 'days') - 1;
       var today = new Date();
     if(today.getSeconds()==0 && today.getMinutes()==0)
       var hours = (24-today.getHours()).toString();
