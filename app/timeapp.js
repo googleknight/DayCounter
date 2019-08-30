@@ -53,7 +53,7 @@
   };
   App.fn.renderTime = function(){
     var startDate = moment(new Date());
-    var endDate = moment("2019-10-11T00:00:01");
+    var endDate = moment("2019-10-04T00:00:01");
 
     var weeks = endDate.diff(startDate, 'weeks');
     var days = endDate.diff(startDate, 'days') - 1;
@@ -79,22 +79,22 @@
     else if(milli.length==2)
       milli="0"+milli;
 
-    if(localStorage.mode == 0)
-    {
-      document.body.style.backgroundColor = "white";
-      document.getElementById("mode").value = "Dark Mode";
-      document.getElementById("mode").style.color = "black";
-      document.getElementById("mode").style.backgroundColor = "white";
-      document.getElementById("mode").style.borderColor = "black";
-    }
-    else
-    {
-      document.body.style.backgroundColor = "black";
-      document.getElementById("mode").value = "Light Mode";
-      document.getElementById("mode").style.color = "white";
-      document.getElementById("mode").style.backgroundColor = "black";
-      document.getElementById("mode").style.borderColor = "white";
-    }
+    // if(localStorage.mode == 0)
+    // {
+    //   document.body.style.backgroundColor = "white";
+    //   document.getElementById("mode").value = "Dark Mode";
+    //   document.getElementById("mode").style.color = "black";
+    //   document.getElementById("mode").style.backgroundColor = "white";
+    //   document.getElementById("mode").style.borderColor = "black";
+    // }
+    // else
+    // {
+    //   document.body.style.backgroundColor = "black";
+    //   document.getElementById("mode").value = "Light Mode";
+    //   document.getElementById("mode").style.color = "white";
+    //   document.getElementById("mode").style.backgroundColor = "black";
+    //   document.getElementById("mode").style.borderColor = "white";
+    // }
     requestAnimationFrame(function(){
       this.html(this.view('time')({
         weeks:weeks,
