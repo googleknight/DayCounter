@@ -33,8 +33,8 @@
 
   App.fn.submit = function(e){
     e.preventDefault();
-    document.getElementById("mode").style.display='block';
-    document.getElementById("mode").addEventListener("click", switchmode);
+    // document.getElementById("mode").style.display='block';
+    // document.getElementById("mode").addEventListener("click", switchmode);
     var pageTracker = _gat._getTracker("UA-88251366-3");
     pageTracker._trackPageview();
     this.analyticsflag = "on";
